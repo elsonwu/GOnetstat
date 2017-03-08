@@ -2,8 +2,7 @@
 
 Netstat implementation in Golang.
 
-This Package get data from /proc/net/tcp|6 and /proc/net/udp|6 and parse
-/proc/[0-9]*/fd/[0-9]* to match the correct inode.
+This Package get data from /proc/net/tcp|6 and /proc/net/udp|6
 
 ## Usage
 
@@ -18,9 +17,6 @@ This will return a array of a Process struct like this
 ```go
 type Process struct {
     User         string
-    Name         string
-    Pid          string
-    Exe          string
     State        string
     Ip           string
     Port         int64
